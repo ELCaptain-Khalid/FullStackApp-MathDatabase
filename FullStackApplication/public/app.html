@@ -1,0 +1,76 @@
+<!-- Khalid Munassar 
+      Full Stack App - Final Project
+      app.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>🤔Math or no 🤔</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+    
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
+            crossorigin="anonymous">
+    </script>
+</head>
+
+<body>
+
+<div class="row"> <!--  this parent div will hold the structure of the page -->
+
+    <div> <!-- this div will display the client information -->
+        <p > Welcome to the Math garden. You will be served some Math <span id="nameLS"></span> <!--  this paragraph will hold the player name on each session -->
+            
+        </p>
+        
+    </div>
+     
+
+    <main id="main"> <!-- this main tag will host the database that would include the game-->
+        <br>
+       <p>
+            <label for="guess"> Here is a guessing to try in the Math Database. Have at it
+            <br>
+             Enter a number between 1-100 * inclusive * 
+            </label>
+            <input type="number" id="guess" name=""   placeholder="">
+                <button id="submit"> Enter </button> <p id=""> </p>
+
+                <P id="output"> </P> <!-- this will hold user output for each guess -->
+       </p>
+       
+            
+    
+    
+        <br>
+        <br>
+        <br>
+
+    <p id="attempt"> </p> <!-- this will display how many tries did it take the player to guess the number -->
+
+       <br>
+       <br>
+       <br>
+
+       <!-- This holds the information for each session per client -->
+       <h2>Records</h2> 
+    <p id="nameRecord">
+       <span>Your Name: </span>
+   
+    </p>
+    <p id="scoreRecord">
+       <span>Your record:</span>
+   
+    </p>   
+
+   
+    </main>
+
+</div>
+           
+</body>
+</html>
